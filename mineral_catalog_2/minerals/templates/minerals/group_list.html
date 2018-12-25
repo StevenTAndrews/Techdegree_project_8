@@ -1,0 +1,5 @@
+{% for group in groups %}
+  <div class="group">
+      <li><a {% if group ==  selected_group %} style="font-weight: 700; font-size: 18px;"{% endif %} href="{% url 'minerals:group' group=group %}">{{ group }}</a></li>
+  </div>
+{% endfor %}
